@@ -30,6 +30,8 @@ if [ -f www/Procfile ]; then
 fi
 
 #Download and install Zend Server
+wget -O $LP_DIR/zend-server-6-php-5.4-nginx.tar.xz https://s3-us-west-2.amazonaws.com/pm-playground/zend-buildpack/zend-server-6-php-5.4-nginx.tar.xz
+wget -O $LP_DIR/nginx.tar.gz https://s3-us-west-2.amazonaws.com/pm-playground/zend-buildpack/nginx.tar.gz
 tar xJf $LP_DIR/zend-server-6-php-5.4-nginx.tar.xz
 tar xzf $LP_DIR/nginx.tar.gz
 
